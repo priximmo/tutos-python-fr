@@ -62,7 +62,7 @@ for i in range(10):
   print(i)
 ```
 
-Rq : range(1..10)
+Rq : range(1,10)
 
 --------------------------------------------------------------
 
@@ -92,6 +92,7 @@ while x < 7 :
 ```
 while x < 7 :
   if x == 5:
+    x += 1
     continue
   print("Xavki !!!")
   x += 1
