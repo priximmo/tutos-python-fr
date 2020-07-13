@@ -14,7 +14,7 @@
 ```
 def mafonction(maliste):
     for item in maliste:
-        return "Hello number : ".format(item)
+        return "Hello number : {}".format(item)
 liste = [ i for i in range(10)]
 print(mafonction(liste))
 ```
@@ -27,7 +27,7 @@ Rq : solution ? retourner une liste , append...
 ```
 def mafonction(maliste):
     for item in maliste:
-        yield "Hello number : ".format(item)
+        yield "Hello number : {}".format(item)
 ```
 
 Attention : aux performances (meilleures si on ne repasse pas par une liste)
@@ -38,6 +38,7 @@ Attention : aux performances (meilleures si on ne repasse pas par une liste)
 
 
 # PYTHON : generators
+
 
 <br>
 * parcourir un generator
@@ -59,7 +60,7 @@ print(result)
 ```
 
 <br>
-* et ça tombe bien car on créer un generator...
+* et ça tombe bien car on peut créer un generator...
 
 ```
 result = (i for i in range(10))
@@ -74,5 +75,22 @@ check = [i for i in result]
 print(check)
 ```
 
+--------------------------------------------------------------------------
 
+
+# PYTHON : generators
+
+
+<br>
+* empreinte mémoire
+
+
+```
+import sys
+list_bytes = [i ** 2 for i in range(10000)]
+print(sys.getsizeof(nums_squared_lc))
+
+gen_bytes = (i ** 2 for i in range(10000))
+print(sys.getsizeof(nums_squared_gc))
+```
 

@@ -3,80 +3,91 @@
 %Site : xavki.blog
 
 
-# PYTHON : closure
+# PYTHON : Decorators
 
 
 <br>
-* notion de closures = fonction dans une fonction et retourne la fonction
+* décorer une fonction = étendre sans la modifier
 
-* réserver un espace mémoire pour cette fonction
+* éviter les duplications de code
 
-* cela est assimilable à instancier une classe
+* une fonction de fonction... (pas tout à fait)
 
 <br>
-* exemple sans closure
+* exemple sans decorator (ajou de "Message :") :
 
 ```
-def fonction1():
-  var1 = "Salut"
-  def fonction2():
-    print("{} Xavki !!!".format(var1))
-  return fonction2()
-fonction1()
+def mafonction1():
+  return "Hello Xavki"
+```
+--------------------------------------------------------------------
+
+# PYTHON : Decorators
+
+
+<br>
+* exemple avec decorator
+
+```
+def dec(fonction):
+  print("Message : ")
+  return fonction
+@dec
+def mafonction1():
+  return "Hello Xavki"
+print(mafonction1())
 ```
 
 --------------------------------------------------------------------
 
-# PYTHON : clojure
+# PYTHON : Decorators
 
 
 <br>
-* avec closure on retourne la fonction 
+* exemple couleur - wraps
 
 ```
-def fonction1():  	# on peut parler de générateur de closure
-  var1 = "Salut"
-  def fonction2():	# closure
-    print("{} Xavki !!!".format(var1))
-  return fonction2
-resultat = fonction1()
-print(resultat)
+from functools import wraps
+def vert(f):
+    @wraps(f)
+    def wrapped(*args, **kwargs):
+        r = f(*args, **kwargs)
+        phrase = "\033[32m {} \033[0m".format(r)        
+        return phrase
+    return wrapped
+@vert
+def mafonction1():
+    return "Hello xavki"
+def mafonction2():
+    return "Au revoir xavki"
+print(mafonction1())
+print(mafonction2())
 ```
 
-<br>
-* exemple :
+--------------------------------------------------------------------
 
-```
-def fonction1(nom):
-  def closure2(mot):
-    print("{} {} !!!".format(mot,nom))
-  return closure2
-resultat = fonction1("Xavki")
-print(resultat("Bonjour"))
-print(resultat("Salut"))
-```
-
-Rq :on a gardé en mémoire le nom instancié dans la fonction1
-
----------------------------------------------------------------------
-
-# PYTHON : clojure
+# PYTHON : Decorators
 
 
 <br>
-* et un peu plus...
-
+* exemple timestamp
 
 ```
-def fonction1(nom):
-  def closure2(mot):
-    print("{} {} !!!".format(mot,nom))
-  return closure2
-resultat = fonction1("Xavki")
-resultat2 = fonction1("Xavier")
-print(resultat("Bonjour"))
-print(resultat2("Salut"))
-print(resultat("Bye"))
+from datetime import datetime
+from functools import wraps
+def ts(f):
+    @wraps(f)
+    def wrapped(*args, **kwargs):
+        r = f(*args, **kwargs)
+        phrase = "{} | {}".format(datetime.now(),r)
+        return phrase
+    return wrapped
+@ts
+def mafonction1():
+    return "Hello xavki"
+@ts
+def mafonction2():
+    return "Au revoir xavki"
+print(mafonction1())
+print(mafonction2())
 ```
-
-* finalement on est proche du comportement d'une classe
