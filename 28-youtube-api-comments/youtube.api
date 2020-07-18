@@ -1,0 +1,75 @@
+#!/usr/bin/python3
+
+import click, random, csv, os, pickle, time, sys
+import google.oauth2.credentials
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+from pathlib import Path
+
+#SCOPES = ['https://www.googleapis.com/auth/youtube.readonly']
+SCOPES = ['https://www.googleapis.com/auth/youtube.force-ssl']
+API_SERVICE_NAME = 'youtube'
+API_VERSION = 'v3'
+HOME = str(Path.home())
+CACHE_CREDENTIALS_DIR = HOME + "/.ytube/"
+CACHE_CREDENTIALS_FILE = CACHE_CREDENTIALS_DIR + "token.pickle"
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
+
+def get_authenticated_service(CLIENT_SECRETS_FILE):
+    credentials = None
+
+    # check if creds path exist
+    if not os.path.exists(CACHE_CREDENTIALS_DIR):
+      os.makedirs(CACHE_CREDENTIALS_DIR)
+
+    # check if creds file exist
+    if os.path.exists(CACHE_CREDENTIALS_FILE):
+        with open(CACHE_CREDENTIALS_FILE, 'rb') as token:
+            credentials = pickle.load(token)
+
+    #  Check if the credentials are invalid or do not exist
+    if not credentials or not credentials.valid:
+
+        # Check if the credentials have expired
+        if credentials and credentials.expired and credentials.refresh_token:
+            credentials.refresh(Request())
+
+        else:
+            # else auth by google
+            flow = InstalledAppFlow.from_client_secrets_file(
+                CLIENT_SECRETS_FILE, SCOPES)
+            credentials = flow.run_console()
+
+        # Save the credentials into the pickle for the next run
+        with open(CACHE_CREDENTIALS_FILE, 'wb') as token:
+            pickle.dump(credentials, token)
+
+    return build(API_SERVICE_NAME, API_VERSION, credentials = credentials)
+
+
+def get_video_comments(service, **kwargs):
+    comments = []
+    # request google api
+    results = service.commentThreads().list(**kwargs).execute()
+    while results:
+        # keep comments and authors
+        for item in results['items']:
+            comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
+            author = item['snippet']['topLevelComment']['snippet']['authorDisplayName']
+            comments.append([author,comment])
+        # Check if another page exists
+        if 'nextPageToken' in results:
+            kwargs['pageToken'] = results['nextPageToken']
+            results = service.commentThreads().list(**kwargs).execute()
+        else:
+            break
+    return comments
+
+service = get_authenticated_service("creds.json")
+video_id = input("Quel est l'ID de la video ?")
+result=get_video_comments(service, part='snippet', videoId=video_id, textFormat='plainText')
+print(result)
+
