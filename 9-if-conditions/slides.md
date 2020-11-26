@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * if = condition
 
 * principe :
@@ -18,6 +20,8 @@ else:
   print("False")
 ```
 <br>
+
+
 * opérateurs de comparaison :
 	* == : égalité
   * >=
@@ -31,6 +35,8 @@ else:
 
 
 <br>
+
+
 * sinon
 
 ```
@@ -43,6 +49,8 @@ else:
 ```
 
 <br>
+
+
 * opérateurs and / or / not
 
 ```
@@ -62,6 +70,8 @@ else:
 
 
 <br>
+
+
 * cas du IS
 
 ```
@@ -79,6 +89,8 @@ print(id(l2))
 ```
 
 <br>
+
+
 * les booléens
 
 ```

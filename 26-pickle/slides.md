@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * serialization/deserialization = Python objects > binaire
 
 * objets : class, lists, dictionnaires...
@@ -14,6 +16,8 @@
 * sauvegarder, conserver, compresser
 
 <br>
+
+
 * on pickle
 
 ```
@@ -29,6 +33,8 @@ output.close()
 ```
 
 <br>
+
+
 * on depickle
 
 ```

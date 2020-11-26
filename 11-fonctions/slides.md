@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * objectif ? factoriser
 
 * éviter de refaire 2 fois la même chose
@@ -14,6 +16,8 @@
 * meilleure maintenance : modifier une fois le code
 
 <br>
+
+
 * principe :
 
 ```
@@ -37,6 +41,8 @@ print("Hello Xavki !!!)
 
 
 <br>
+
+
 * affichage ou non ? laisser le choix à l'utilisateur de la fonction
 
 ```
@@ -46,6 +52,8 @@ print(mafonction())
 ```
 
 <br>
+
+
 * return = jouer des méthodes sur la fonctions
 
 ```
@@ -61,6 +69,8 @@ print(mafonction().upper())
 
 
 <br>
+
+
 * passer des variables :
 
 ```
@@ -70,6 +80,8 @@ print(mafonction("Hello", "Xavki")
 ```
 
 <br>
+
+
 * variable par défaut :
 
 ```

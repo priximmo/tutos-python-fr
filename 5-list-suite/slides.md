@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * parcourir une liste
 
 ```
@@ -15,6 +17,8 @@ for lettre in lettres:
 ```
 
 <br>
+
+
 * plus de précision
 
 ```
@@ -23,6 +27,8 @@ for index, valeur in enumerate(lettres):
 ```
 
 <br>
+
+
 * ou plus
 
 ```
@@ -36,6 +42,8 @@ for index, valeur in enumerate(lettres, start=2):
 
 
 <br>
+
+
 * jointure
 
 ```
@@ -43,6 +51,8 @@ jointure = ", ".join(lettres)
 ```
 
 <br>
+
+
 * découper pour créer une list
 
 ```

@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * décorer une fonction = étendre sans la modifier
 
 * éviter les duplications de code
@@ -14,6 +16,8 @@
 * une fonction de fonction... (pas tout à fait)
 
 <br>
+
+
 * exemple sans decorator (ajou de "Message :") :
 
 ```
@@ -26,6 +30,8 @@ def mafonction1():
 
 
 <br>
+
+
 * exemple avec decorator
 
 ```
@@ -44,6 +50,8 @@ print(mafonction1())
 
 
 <br>
+
+
 * exemple couleur - wraps
 
 ```
@@ -70,6 +78,8 @@ print(mafonction2())
 
 
 <br>
+
+
 * exemple timestamp
 
 ```

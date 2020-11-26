@@ -6,6 +6,8 @@
 # PYTHON : Globales vs locales
 
 <br>
+
+
 * la portée des variables
 
 * variables locales vs variables globales
@@ -13,6 +15,8 @@
 * importance sur de gros programmes
 
 <br>
+
+
 * locales = à une fonction et peuvent être utilisées ailleurs par d'autres fonctions (taille etc diff)
 
 * global = sans limite, définie en dehors d'une fonction (sauf si utilisation du mot clef global)
@@ -24,6 +28,8 @@
 
 
 <br>
+
+
 * globale
 
 ```
@@ -34,6 +40,8 @@ fonction()
 ```
 
 <br>
+
+
 * locale
 
 ```
@@ -53,6 +61,8 @@ print(var2)
 
 
 <br>
+
+
 * locale à une fonction
 
 ```
@@ -65,6 +75,8 @@ print(var)
 ```
 
 <br>
+
+
 * forcer une globale dans une fonction (pas top)
 
 ```
@@ -86,6 +98,8 @@ print(var)
 
 
 <br>
+
+
 * et dans des nested function (imbriquées)
 
 ```

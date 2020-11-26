@@ -7,10 +7,14 @@
 
 
 <br>
+
+
 tuple = ()
 tuple = tuple()
 
 <br>
+
+
 * listes immutables
 
 * plus rapides qu'une liste
@@ -18,6 +22,8 @@ tuple = tuple()
 * sécurise le contenu
 
 <br>
+
+
 * exemple
 
 ```
@@ -27,6 +33,8 @@ tuple.index("A")
 ```
 
 <br>
+
+
 * condition
 
 ```

@@ -6,6 +6,8 @@
 # PYTHON : intro
 
 <br>
+
+
 * langage interprété  : sans étape préalable (ruby, perl)
 
 * à la différence de langages compilés (compilation ou assemblage = C, C++, assembleur) 
@@ -17,6 +19,8 @@ https://code.visualstudio.com/docs/?dv=linux64_deb
 extension : code runner
 
 <br>
+
+
 * retrouver le binaire python
 
 ```
@@ -35,6 +39,8 @@ which python
 # PYTHON : strings
 
 <br>
+
+
 * entre doubles ou simples quotes (échaper si nécessaire)
 
 ```
@@ -42,6 +48,8 @@ print("Hello World")
 ```
 
 <br>
+
+
 * sur plusieurs ligne triple quotes ou triple doubles
 
 ```
@@ -58,6 +66,8 @@ Xavki !!
 
 
 <br>
+
+
 * variables
 	* simplifier maintenance
 	* meilleure compréhension
@@ -69,6 +79,8 @@ print("Bonjour " + variable + " !!!")
 ```
 
 <br>
+
+
 * plus lisible encore
 
 ```
@@ -79,6 +91,8 @@ print(phrase)
 ```
 
 <br>
+
+
 * typage
 
 ```

@@ -6,6 +6,8 @@
 # PYTHON : VirtualEnv
 
 <br>
+
+
 * isolation
 
 * installation
@@ -34,6 +36,8 @@ deactivate
 
 
 <br>
+
+
 * version de python 
 
 ```

@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * google api pour youtube
 
 * doc : https://developers.google.com/youtube/v3/guides/auth/client-side-web-apps
@@ -14,9 +16,13 @@
 * création de credentials : https://console.developers.google.com/apis/
 
 <br>
+
+
 * librairies : pip install --upgrade google-auth-oauthlib google-auth-httplib2
 
 <br>
+
+
 1- création des creds
 2- modules : 
 
@@ -25,6 +31,8 @@ pip3 install click google-auth-oauthlib google-auth-httplib2 google-api-python-c
 ```
 
 <br>
+
+
 * import des modules
 
 ```
@@ -38,6 +46,8 @@ from pathlib import Path
 ```
 
 <br>
+
+
 * settings des principales variables
 
 ```
@@ -51,6 +61,8 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 ```
 
 <br>
+
+
 * passage du fichier de creds à la fonction d'authentification
 
 ```
@@ -58,6 +70,8 @@ service = get_authenticated_service("creds.json")
 ```
 
 <br>
+
+
 * création de la fonction
 
 ```
@@ -66,6 +80,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * si le répertoire pour stocker le pickle existe pas on le créé
 
 ```
@@ -75,6 +91,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * si le répertoire existe on vérifie si le pickle est présent
 
 ```
@@ -85,6 +103,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * à partir du pickle on check si les creds sont valides
 
 ```
@@ -93,6 +113,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * on check si les credentials on expiré sinon on rafraichit
 
 ```
@@ -102,6 +124,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * sinon si pas de rafraichissement possible, réauthentification
 
 ```
@@ -113,6 +137,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * dans tous les cas enregistrement dans le fichiers pickle (si invalid ou pas de creds)
 ```
         # Save the credentials into the pickle for the next run
@@ -121,6 +147,8 @@ def get_authenticated_service(CLIENT_SECRETS_FILE):
 ```
 
 <br>
+
+
 * dans tous les cas on retourne le build avec le passage de 3 variables dont credentials :
 
 ```

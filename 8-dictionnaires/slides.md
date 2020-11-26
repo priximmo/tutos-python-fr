@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * définition comme les Sets : {}
 
 * principe de clefs valeurs
@@ -17,6 +19,8 @@ dictionnaire = { "clef1": "valeur1", "maliste": ["valeur1", "valeur2", "valeur3"
 ```
 
 <br>
+
+
 * interrogation
 
 ```
@@ -36,6 +40,8 @@ dictionnaire.get("clef1")
 
 
 <br>
+
+
 * modification
 
 ```
@@ -44,6 +50,8 @@ dictionnaire.update({"clef1": "nllevaleur1", "clef2": "nllevaleur2")
 ```
 
 <br>
+
+
 * suppression
 
 ```
@@ -51,6 +59,8 @@ del dictionnaire["clef2"]
 ```
 
 <br>
+
+
 * suppression avec utilsation
 
 ```
@@ -58,6 +68,8 @@ valeur1 = dictionnaire.pop("clef1")
 ```
 
 <br>
+
+
 * autres
 
 ```
@@ -68,6 +80,8 @@ dictionnaire.items()
 ```
 
 <br>
+
+
 * boucle sur clefs / valeurs
 
 ```

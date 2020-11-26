@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * click : module
 
 ```
@@ -14,6 +16,8 @@ pip3 install click
 ```
 
 <br>
+
+
 * spécifique à la CLI
 
 * parsing des arguments et options
@@ -23,9 +27,13 @@ pip3 install click
 * édition de l'aide
 
 <br>
+
+
 * mise en place de l'environnement
 
 <br>
+
+
 * exemple : help 
 
 ```

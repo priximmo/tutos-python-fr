@@ -6,9 +6,13 @@
 # PYTHON : module OS - path
 
 <br>
+
+
 * utilisation de fonctions de système d'exploitation
 
 <br>
+
+
 * chargement et informations
 
 ```
@@ -18,6 +22,8 @@ print(help(os.chmod)) # ex : chmod
 ```
 
 <br>
+
+
 * walk : parcourir un répertoire (répertoires et fichiers)
 * environ : variables d'environnement
 
@@ -41,6 +47,8 @@ for chemin,repertoires,fichiers in os.walk('/tmp/'):
 
 
 <br>
+
+
 * récupérer une variable d'environnement
 
 ```
@@ -50,6 +58,8 @@ print(os.environ.get('HOME'))
 ```
 
 <br>
+
+
 * jointure avec ou sans slash
 
 ```
@@ -58,6 +68,8 @@ print(os.path.join("/my/home/","test.txt"))
 ```
 
 <br>
+
+
 * split, splitext, dirname et basename
 
 ```
@@ -68,6 +80,8 @@ print(os.path.splitext("/my/home/test.txt"))
 ```
 
 <br>
+
+
 * condition
 
 ```

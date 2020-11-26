@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * méthodes
 
 ```
@@ -26,6 +28,8 @@ print(help(str.lower))		# aide spécifique
 ```
 
 <br>
+
+
 * fonctions
 
 ```
@@ -38,24 +42,34 @@ print(len(variable))			# nb lettres
 
 
 <br>
+
+
 * initiation tableau > string
 
 <br>
+
+
 ```
 print(variable[0:5]) # 5 non inclus
 ```
 
 <br>
+
+
 ```
 print(variable[0:]) # de 0 à la fin
 ```
 
 <br>
+
+
 ```
 print(variable[:3]) # du début à 3
 ```
 
 <br>
+
+
 ```
 print(variable[::-1]) # de 0 à la fin
 ```

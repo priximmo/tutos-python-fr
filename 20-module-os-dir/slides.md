@@ -6,9 +6,13 @@
 # PYTHON : module OS - dir
 
 <br>
+
+
 * utilisation de fonctions de système d'exploitation
 
 <br>
+
+
 * chargement et informations
 
 ```
@@ -18,6 +22,8 @@ print(help(os.chmod)) # ex : chmod
 ```
 
 <br>
+
+
 * utilisation avec getcwd (pwd)
 
 ```
@@ -31,6 +37,8 @@ print(os.getcwd())
 
 
 <br>
+
+
 * déplacement
 
 ```
@@ -39,6 +47,8 @@ print(os.getcwd())
 ```
 
 <br>
+
+
 * lister les répertoires
 
 ```
@@ -46,6 +56,8 @@ print(os.listdir('/tmp/'))
 ```
 
 <br>
+
+
 * créer un répertoire (sur un niveau = non récursif)
 
 ```
@@ -69,6 +81,8 @@ print(os.listdir('/tmp/myrep2'))
 
 
 <br>
+
+
 * suppression d'un répertoire
 
 ```
@@ -77,6 +91,8 @@ print(os.listdir('/tmp/myrep2'))
 ```
 
 <br>
+
+
 * suppression recursive (attention se placer dans le répertoire)
 
 ```
@@ -87,6 +103,8 @@ print(os.listdir('/tmp/myrep2'))
 ```
 
 <br>
+
+
 * modification du nom (idem fichiers)
 
 ```
@@ -102,6 +120,8 @@ print(os.listdir('/tmp/myrep2/lvl1'))
 
 
 <br>
+
+
 * informations
 
 ```
@@ -110,6 +130,8 @@ print(os.stat('/tmp/myrep2/lvl1').st_size)
 ```
 
 <br>
+
+
 * modification time
 
 ```

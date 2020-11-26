@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * fonctions et les itérations de résultats
 
 * la où ça coince :
@@ -22,6 +24,8 @@ print(mafonction(liste))
 Rq : solution ? retourner une liste , append...
 
 <br>
+
+
 * mot clef "yield" > generator
 
 ```
@@ -41,6 +45,8 @@ Attention : aux performances (meilleures si on ne repasse pas par une liste)
 
 
 <br>
+
+
 * parcourir un generator
 
 ```
@@ -52,6 +58,8 @@ print(next(result))
 ```
 
 <br>
+
+
 * récupérer l'intégralité sans next ?
 
 ```
@@ -60,6 +68,8 @@ print(result)
 ```
 
 <br>
+
+
 * et ça tombe bien car on peut créer un generator...
 
 ```
@@ -82,6 +92,8 @@ print(check)
 
 
 <br>
+
+
 * empreinte mémoire
 
 

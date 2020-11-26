@@ -7,9 +7,13 @@
 
 
 <br>
+
+
 * avantage : typage minimaliste
 
 <br>
+
+
 * int
 
 ```
@@ -23,6 +27,8 @@ num = 3.1416
 ```
 
 <br>
+
+
 * opérations
 
 ```
@@ -41,6 +47,8 @@ print(3*(2+1))
 
 
 <br>
+
+
 * incrémentations
 
 ```
@@ -50,6 +58,8 @@ num x= 10
 ```
 
 <br>
+
+
 * fonctions
 
 ```
@@ -59,6 +69,8 @@ round(3.14,1)
 ```
 
 <br>
+
+
 * comparaisons
 
 ```
@@ -68,6 +80,8 @@ print(3!=2)
 ```
 
 <br>
+
+
 * caster
 
 ```

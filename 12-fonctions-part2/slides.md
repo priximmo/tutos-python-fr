@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * "*args" : récupérer un tuple
 
 * exemple :
@@ -27,6 +29,8 @@ print(liste_phrases)
 
 
 <br>
+
+
 * "**kwargs" : récupérer un dictionnaire
 
 * exemple :

@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * instancier une liste
 
 ```
@@ -16,6 +18,8 @@ liste = ["A", "B", "C"]
 ```
 
 <br>
+
+
 * principe
 
 ```
@@ -34,6 +38,8 @@ liste[::-1]
 
 
 <br>
+
+
 * ajout dans une en fin de liste :
 
 ```
@@ -41,6 +47,8 @@ liste.append("F")
 ```
 
 <br>
+
+
 * insertion
 
 ```
@@ -48,6 +56,8 @@ liste.insert(1, "Z")
 ```
 
 <br>
+
+
 * ajout d'une liste à une autre
 
 ```
@@ -56,6 +66,8 @@ liste.extend(liste2)
 ```
 
 <br>
+
+
 * suppression
 
 ```
@@ -63,6 +75,8 @@ liste.remove("A")
 ```
 
 <br>
+
+
 * extraction de liste par la fin
 
 ```
@@ -76,6 +90,8 @@ variable = liste.pop()
 
 
 <br>
+
+
 * inverser
 
 ```
@@ -83,6 +99,8 @@ liste.reverse()
 ```
 
 <br>
+
+
 * tri
 
 ```
@@ -92,6 +110,8 @@ liste2 = sorted(liste)
 ```
 
 <br>
+
+
 * min/max/sum
 
 ```
@@ -101,6 +121,8 @@ sum = sum(liste)
 ```
 
 <br>
+
+
 * trouver un index
 
 ```
@@ -108,6 +130,8 @@ liste.index("A")
 ```
 
 <br>
+
+
 * condition
 
 ```

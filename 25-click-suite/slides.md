@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * début
 
 ```
@@ -22,6 +24,8 @@ if __name__ == '__main__':
 ```
 
 <br>
+
+
 * click permet de gérer le prompt
 
 ```
@@ -29,6 +33,8 @@ if __name__ == '__main__':
 ```
 
 <br>
+
+
 * click permet de gérer l'affichage avec echo
 
 ```
@@ -41,6 +47,8 @@ click.echo(f"Hello, {name}")
 
 
 <br>
+
+
 * la coloration de l'output avec secho
 
 ```
@@ -48,6 +56,8 @@ click.secho(f"Hello, {name}", fg="red", bold=True)
 ```
 
 <br>
+
+
 * le flag true/false sur argument
 
 ```
@@ -67,6 +77,8 @@ def cli(name,fr):
 # PYTHON : CLICK suite
 
 <br>
+
+
 * choix du flag
 
 ```
@@ -74,6 +86,8 @@ def cli(name,fr):
 ```
 
 <br>
+
+
 * passer un tuple
 
 ```
@@ -83,6 +97,8 @@ def output(data):
 ```
 
 <br>
+
+
 * passer une liste
 
 ```
@@ -90,6 +106,8 @@ def output(data):
 ```
 
 <br>
+
+
 * fichier
 
 ```

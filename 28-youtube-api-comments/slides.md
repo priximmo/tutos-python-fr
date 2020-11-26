@@ -7,10 +7,14 @@
 
 
 <br>
+
+
 Doc1 :https://developers.google.com/youtube/v3/docs/commentThreads
 Doc2 : https://developers.google.com/youtube/v3/docs/commentThreads/list
 
 <br>
+
+
 * petite modification du SCOPES
 
 ```
@@ -19,6 +23,8 @@ SCOPES = ['https://www.googleapis.com/auth/youtube.force-ssl']
 ```
 
 <br>
+
+
 * traitement de la récup des commentaires youtube
 
 ```
@@ -28,6 +34,8 @@ print(result)
 ```
 
 <br>
+
+
 * récupération des arguments passés à notre fonction (kwargs et service pour authent)
 
 ```
@@ -36,6 +44,8 @@ def get_video_comments(service, **kwargs):
 ```
 
 <br>
+
+
 * passage de la requête à l'API
 
 ```
@@ -44,6 +54,8 @@ def get_video_comments(service, **kwargs):
 ```
 
 <br>
+
+
 * parcourir les résultats et filtre de la collecte
 
 ```
@@ -56,6 +68,8 @@ def get_video_comments(service, **kwargs):
 ```
 
 <br>
+
+
 * d'autres pages :
 
 ```
@@ -68,6 +82,8 @@ def get_video_comments(service, **kwargs):
 ```
 
 <br>
+
+
 * la fonction retourne le résultat
 
 ```

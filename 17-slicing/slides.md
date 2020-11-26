@@ -6,6 +6,8 @@
 # PYTHON : Slicing
 
 <br>
+
+
 * manipulation de liste
 
 * à partir des index
@@ -26,6 +28,8 @@ maliste[-2]
 
 
 <br>
+
+
 * principe [ START : FIN : EVOL ]
 
 * FIN : non inclusif

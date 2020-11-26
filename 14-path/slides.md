@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * binaire python :
 
 ```
@@ -14,6 +16,8 @@ which python
 ```
 
 <br>
+
+
 * les librairies :
 
 ```
@@ -28,6 +32,8 @@ print(sys.path)
 # PYTHON : le PATH
 
 <br>
+
+
 * ajout par python lui-même :
 
 ```
@@ -36,6 +42,8 @@ sys.path.append("/test2/")
 ```
 
 <br>
+
+
 * modification via le système :
 
 ```

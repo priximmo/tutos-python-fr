@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * parcourir une liste (focntionne avec les strings) 
 
 ```
@@ -16,6 +18,8 @@ for lettre in lettres:
 ```
 
 <br>
+
+
 * break : sortir de la boucle
 
 ```
@@ -27,6 +31,8 @@ for lettre in lettres:
 ```
 
 <br>
+
+
 * continue : sauter une itération
 
 ```
@@ -44,6 +50,8 @@ for lettre in lettres:
 
 
 <br>
+
+
 * combinaisons de deux listes
 
 ```
@@ -55,6 +63,8 @@ for lettre in lettres:
 ```
 
 <br>
+
+
 * range : plage de chiffres
 
 ```
@@ -71,6 +81,8 @@ Rq : range(1,10)
 
 
 <br>
+
+
 * while = tant que
 
 ```
@@ -79,6 +91,8 @@ while x < 7 :
 ```
 
 <br>
+
+
 * itérer la variable
 
 ```
@@ -88,6 +102,8 @@ while x < 7 :
 ```
 
 <br>
+
+
 * continue/break
 ```
 while x < 7 :

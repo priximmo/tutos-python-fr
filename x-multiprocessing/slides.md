@@ -6,6 +6,8 @@
 # PYTHON : Multiprocessing
 
 <br>
+
+
 * objectifs : utiliser tous les cores cpu
 
 ```
@@ -15,6 +17,8 @@ print("CPUs : ", multiprocessing.cpu_count())
 ```
 
 <br>
+
+
 * exemple : 
 
 ```

@@ -7,11 +7,15 @@
 
 
 <br>
+
+
 * modules = organisation du code / partage
 
 * partage de variables, fonctions
 
 <br>
+
+
 * mon_module.py :
 
 ```
@@ -34,6 +38,8 @@ mavariable = "variable du main"
 
 
 <br>
+
+
 * fonctions :
 
 ```
@@ -59,6 +65,8 @@ print(mon_module.mafonction())
 
 
 <br>
+
+
 * fonctions :
 
 ```
@@ -84,6 +92,8 @@ print(mon_module.mafonction(mavariable))
 
 
 <br>
+
+
 * fonctions :
 
 ```

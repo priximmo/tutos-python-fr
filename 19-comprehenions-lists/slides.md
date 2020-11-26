@@ -6,6 +6,8 @@
 # PYTHON : List Comprehension
 
 <br>
+
+
 * oneliners
 
 * simplifaction de la constitution de listes
@@ -13,6 +15,8 @@
 * plus difficile aux débutants
 
 <br>
+
+
 * liste simple
 
 ```
@@ -28,6 +32,8 @@ maliste = [i for i in range(10)]
 
 
 <br>
+
+
 * introduire du calcul
 
 ```
@@ -38,6 +44,8 @@ for i in maliste:
 ```
 
 <br>
+
+
 * et sinon ...
 
 ```
@@ -52,6 +60,8 @@ maliste = [i for i in range(10)]
 
 
 <br>
+
+
 * conditions :
 
 ```
@@ -63,6 +73,8 @@ for i in maliste:
 ```
 
 <br>
+
+
 * et sinon ...
 
 ```
@@ -78,6 +90,8 @@ maliste = [i for i in range(10) if i%2 == 0]
 
 
 <br>
+
+
 * les listes de listes
 
 ```
@@ -91,6 +105,8 @@ print(malistefinale)
 ```
 
 <br>
+
+
 * et sinon ...
 
 ```

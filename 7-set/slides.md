@@ -7,6 +7,8 @@
 
 
 <br>
+
+
 * listes sans ordre
 
 * sans doublons
@@ -17,6 +19,8 @@ set = set()
 ```
 
 <br>
+
+
 * exemples
 
 ```
@@ -31,6 +35,8 @@ set = {"A", "B", "C", "D", "E", "A"}
 
 
 <br>
+
+
 * intersections
 
 ```

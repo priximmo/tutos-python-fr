@@ -6,11 +6,15 @@
 # PYTHON : Tris
 
 <br>
+
+
 * méthode : liste.sort()
 
 * fonction : sorted(liste)
 
 <br>
+
+
 * option : reverse=true
 
 * valable pour liste, tuple, set et dictionnaires
