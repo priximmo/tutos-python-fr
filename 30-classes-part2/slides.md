@@ -67,7 +67,6 @@ Note : xavkicar.doors = 5
         return summary
 ```
 
-
 -----------------------------------------------------------------
 
 # PYTHON : Les Classes - Part 2
@@ -90,6 +89,11 @@ Note : xavkicar.doors = 5
   Crash    : {self.crash}
 ```
 
+-----------------------------------------------------------------
+
+# PYTHON : Les Classes - Part 2
+
+<br>
 ```
     def setCrash(self,crash):
         self.crash += crash
@@ -117,6 +121,8 @@ class ClassicCar(Car):
         super().__init__(color,year)
         self.crash = crash
 ```
+
+```
 xavcar = ClassicCar("Yellow",2000,1)
 print(xavcar.getCar())
 ```
@@ -134,8 +140,7 @@ print(xavcar.getCar())
     def getClassicCar(self):
         """Classical Car characteristics"""
         summary = f"""
-  Color    : {self.color}
-  Year     : {self.year}
+...
   MaxSpeed : {self.max_speed()}
   Doors    : {self.doors}
   Crash    : {self.crash}
@@ -143,6 +148,7 @@ print(xavcar.getCar())
             """
         return summary
 ```
+
 
 ```
 print(xavcar.getClassicCar())
