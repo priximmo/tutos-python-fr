@@ -1,0 +1,81 @@
+
+
+* yarl : split url library
+
+https://github.com/aio-libs/yarl
+
+```
+from yarl import URL
+url = URL('https://www.python.org/~guido?arg=1#frag')
+
+# All url parts: scheme, user, password, host, port, path, query and fragment are accessible by properties:
+
+>>> url.scheme
+'https'
+>>>  url.host
+'www.python.org'
+>>> url.path
+'/~guido'
+>>> url.query_string
+'arg=1'
+>>> url.query
+<MultiDictProxy('arg': '1')>
+>>> url.fragment
+'frag'
+```
+
+* watchfiles : code reload on file changes
+https://github.com/samuelcolvin/watchfiles
+
+```
+# cli 
+watchfiles "some command" src
+```
+
+# code
+
+```
+import asyncio
+from watchfiles import awatch
+
+async def main():
+    async for changes in awatch('/path/to/dir'):
+        print(changes)
+
+asyncio.run(main())
+```
+
+* hug : simple API
+https://github.com/hugapi/hug
+
+```
+# Build an example API with a simple endpoint in just a few lines.
+
+# filename: happy_birthday.py
+"""A basic (single function) API written using hug"""
+import hug
+
+
+@hug.get('/happy_birthday')
+def happy_birthday(name, age:hug.types.number=1):
+    """Says happy birthday to a user"""
+    return "Happy {age} Birthday {name}!".format(**locals())
+```
+
+
+* grip : markdown server
+
+```
+grip AUTHORS.md 80
+ * Running on http://localhost:80/
+
+grip --export
+Exporting to README.html
+
+cat README.md | grip -
+ * Running on http://localhost:6419/
+
+grip --user <your-username> --pass <your-password>
+
+https://github.com/joeyespo/grip#configuration
+```
